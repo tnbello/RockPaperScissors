@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <h1>Let's play Rock Paper Scissors!</h1>
+    <p>Make your choice</p>
+    <button
+      id="rock"
+      style="font-size: 24px"
+      value="0"
+      onclick="assignMove(value)"
+    >
+      Rock
+      <i class="material-symbols-outlined">sports_mma</i>
+    </button>
+
+    <button
+      id="paper"
+      style="font-size: 24px"
+      value="1"
+      onclick="assignMove(value)"
+    >
+      Paper
+      <i class="material-symbols-outlined">note</i>
+    </button>
+
+    <button
+      id="scissors"
+      style="font-size: 24px"
+      value="2"
+      onclick="assignMove(value)"
+    >
+      Scissors
+      <i class="material-symbols-outlined">cut</i>
+    </button>
+  </body>
+</html>
