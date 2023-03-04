@@ -10,7 +10,7 @@ function assignMove(id) {
   playTurn();
 }
 
-// play a turn and adjust score
+// play a turn
 function playTurn() {
   // generate computer's move
   cMove = Math.floor(Math.random() * 3);
@@ -18,15 +18,21 @@ function playTurn() {
 
   // compare moves to determine winner
   if (pMove == cMove) {
-    console.log("Tie");
-    console.log("Score" + score);
+    document.getElementById("verdict").textContent = "Tie";
   } else if ((cMove - pMove) % 3 == 1) {
-    console.log("Lose");
     score--;
-    console.log("Score" + score);
+    document.getElementById("verdict").textContent = "Lose";
   } else {
-    console.log("Win");
     score++;
-    console.log("Score" + score);
+    document.getElementById("verdict").textContent = "Win";
   }
+
+  // update displayed score
+  document.getElementById("score").textContent = "Score: " + score;
+}
+
+// reset score
+function reset() {
+  score = 0;
+  document.getElementById("score").textContent = "Score: " + score;
 }
