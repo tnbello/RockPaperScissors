@@ -18,13 +18,13 @@ function playTurn() {
 
   // compare moves to determine winner
   if (pMove == cMove) {
-    document.getElementById("verdict").textContent = "Tie";
+    document.getElementById("verdict").textContent = " You tied";
   } else if ((cMove - pMove) % 3 == 1) {
     score--;
-    document.getElementById("verdict").textContent = "Lose";
+    document.getElementById("verdict").textContent = "You lost";
   } else {
     score++;
-    document.getElementById("verdict").textContent = "Win";
+    document.getElementById("verdict").textContent = "You won!";
   }
 
   // update displayed score
@@ -35,4 +35,5 @@ function playTurn() {
 function reset() {
   score = 0;
   document.getElementById("score").textContent = "Score: " + score;
+  document.getElementById("verdict").textContent = "";
 }

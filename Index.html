@@ -12,18 +12,21 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="banner">
-          <h2>Let's play Rock Paper Scissors!</h2>
-          <h2 id="verdict"></h2>
-          <h2 id="score">Score: 0</h2>
-          <button id="reset" onclick="reset()">
-            <i class="material-symbols-outlined">restart_alt</i>
-          </button>
+        <div class="flex-container">
+          <div id="left">
+            <p>Let's play</br>Rock Paper Scissors</p>
+            <p id="verdict"></p>
+          </div>
+          <div id="right">
+            <p id="score">Score: 0</p>
+            <button id="reset-btn" onclick="reset()">
+              <i class="material-symbols-outlined">restart_alt</i>
+            </button>
+          </div>
         </div>
         <div class="game">
-          <button
+          <button class="choice-btn"
             id="rock"
-            style="font-size: 24px"
             value="0"
             onclick="assignMove(value)"
           >
@@ -31,9 +34,8 @@
             <i class="material-symbols-outlined">sports_mma</i>
           </button>
 
-          <button
+          <button class="choice-btn"
             id="paper"
-            style="font-size: 24px"
             value="1"
             onclick="assignMove(value)"
           >
@@ -41,9 +43,8 @@
             <i class="material-symbols-outlined">note</i>
           </button>
 
-          <button
+          <button class="choice-btn"
             id="scissors"
-            style="font-size: 24px"
             value="2"
             onclick="assignMove(value)"
           >
