@@ -1,5 +1,5 @@
 body {
-  background-color: #251f47;
+  background-color: #5d707f;
   padding: 0;
   margin: 0;
   font-size: medium;
@@ -23,10 +23,11 @@ body {
   border-radius: 10px;
 }
 
-.game {
+.btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 #reset-btn {
@@ -36,13 +37,14 @@ body {
 }
 
 .choice-btn {
-  font-size: 24px;
-  border-radius: 8px;
-  border-color: transparent;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .flex-container {
   display: flex;
+  padding: 10px;
 }
 
 #left {
