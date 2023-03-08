@@ -15,17 +15,21 @@
         <div class="flex-container">
           <div id="left">
             <p>Let's play</br>Rock Paper Scissors</p>
-            <p id="verdict"></p>
+            <p id="verdict">Select your move...</p>
+          </div>
+          <div id="middle">
+            <p id="score">Score: 0</p>
           </div>
           <div id="right">
-            <p id="score">Score: 0</p>
             <button id="reset-btn" onclick="reset()">
               <i class="material-symbols-outlined">restart_alt</i>
             </button>
           </div>
         </div>
+        <div style="text-align: center;">
+          <p id="play"></p>
+        </div>
         <div class="btn-container">
-
           <input 
           id="rock"
           type="image"
@@ -52,35 +56,6 @@
           value="2"
           onclick="assignMove(value)"
           />
-
-          <!--
-          <button class="choice-btn"
-            id="rock"
-            value="0"
-            onclick="assignMove(value)"
-          >
-            Rock
-            <i class="material-symbols-outlined">sports_mma</i>
-          </button>
-
-          <button class="choice-btn"
-            id="paper"
-            value="1"
-            onclick="assignMove(value)"
-          >
-            Paper
-            <i class="material-symbols-outlined">note</i>
-          </button>
-
-          <button class="choice-btn"
-            id="scissors"
-            value="2"
-            onclick="assignMove(value)"
-          >
-            Scissors
-            <i class="material-symbols-outlined">cut</i>
-          </button>
-          -->
         </div>
       </div>
     </div>
